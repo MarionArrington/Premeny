@@ -1,1 +1,76 @@
+<style>
+    /* 1. Otáčanie kartičiek */
+    .spell-card-container { perspective: 1000px; display: inline-block; margin-bottom: 15px; }
+    .spell-card { transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d; border-radius: 10px; }
+    .spell-card-container:hover .spell-card { transform: rotateY(360deg); }
 
+    /* 2. MAGICKÁ ZMENA FARBY TEXTU */
+    .magic-text { color: #eb4b86; transition: color 0.4s ease; cursor: default; }
+    .magic-text:hover { color: #2a5d8f; }
+
+    /* 3. ANIMÁCIA HVIEZD (PREPNUTIE Z OBRYSU NA PLNOU) */
+    .star-divider { margin-top: -10px; margin-bottom: 15px; text-align: center; font-size: 26px; }
+    
+    .star-wrapper { position: relative; display: inline-block; margin: 0 4px; color: #eb4b86; }
+    
+    .star-full {
+        position: absolute; top: 0; left: 0;
+        opacity: 0; /* Najprv neviditeľná */
+        animation: fade-in 0.5s ease-out forwards;
+    }
+
+    @keyframes fade-in { to { opacity: 1; } }
+
+    /* Postupné oneskorenie pre každú hviezdu */
+    .star-wrapper:nth-child(1) .star-full { animation-delay: 0.3s; }
+    .star-wrapper:nth-child(2) .star-full { animation-delay: 0.6s; }
+    .star-wrapper:nth-child(3) .star-full { animation-delay: 0.9s; }
+    .star-wrapper:nth-child(4) .star-full { animation-delay: 1.2s; }
+    .star-wrapper:nth-child(5) .star-full { animation-delay: 1.5s; }
+    .star-wrapper:nth-child(6) .star-full { animation-delay: 1.8s; }
+    .star-wrapper:nth-child(7) .star-full { animation-delay: 2.1s; }
+</style>
+
+<center>
+    <img src="https://i.ibb.co/Pj4WgpD/premeny.png" width="60%">
+    <div class="star-divider">
+        <span class="star-wrapper">☆<span class="star-full">★</span></span>
+        <span class="star-wrapper">☆<span class="star-full">★</span></span>
+        <span class="star-wrapper">☆<span class="star-full">★</span></span>
+        <span class="star-wrapper">☆<span class="star-full">★</span></span>
+        <span class="star-wrapper">☆<span class="star-full">★</span></span>
+        <span class="star-wrapper">☆<span class="star-full">★</span></span>
+        <span class="star-wrapper">☆<span class="star-full">★</span></span>
+    </div>
+</center>
+
+&nbsp;
+<p style="text-align: justify">Přeměňování predstavuje odvetvie mágie zamerané na <span class="magic-text">zmenu vzhľadu či iných vlastností objektu.</span> 
+Ide o disciplínu umožňujúcu premeniť takmer všetky objekty okolo nás, avšak aj v tomto prípade existujú obmedzenia (nič nedokážete premeniť na požívateľné jedlo, mŕtvych neprivediete späť k životu, obmedzenie týkajúce sa veľkosti). 
+&nbsp;
+Obecne je Přeměňování považované za jednu z <span class="magic-text">najnáročnejších a najvedeckejších magických disciplín,</span> vyžadujúcu veľkú dávku <span class="magic-text">trpezlivosti, systematickosti a presnosti.</span> Veľkou výhodou je pre kúzelníka i rozvinutá schopnosť <span class="magic-text">imaginácie,</span> keď si dokáže premenený objekt detailne predstaviť a tým čo najviac usmerniť tok mágie k požadovanému výsledku. </p>
+&nbsp;
+<center><img src="https://i.ibb.co/875m8RH/Tortue-en-th-i-re.gif" width="43%"></center>
+<p style="text-align: justify">Keďže sa jedná o veľmi náročnú disciplínu, ponechám na jednotlivých profesoroch Přeměňování, aby vás do nej detailnejšie zasvätili a my prejdeme k dvom kúzlam, ktoré sú súčasťou osnov ZKV. <br><br></p>
+
+<p style="text-align: justify"><font color="#eb4b86"><u><b><big>REPARIFARGE</big></b></u></font></p>
+<div style="overflow: hidden;">
+    <div class="spell-card-container" style="float: left; margin-right: 20px;">
+        <div class="spell-card">
+            <img src="https://i.ibb.co/zJdxsCn/reparifarge.png" width="220" height="290" style="display: block; border-radius: 10px;">
+        </div>
+    </div>
+    <p style="text-align: justify">Jedno z najčastejšie využívaných kúziel v oblasti přeměňování slúžiace nielen na <span class="magic-text">nápravu nevydarenej premeny,</span> ale tiež na zvrátenie účinku niektorých vybraných kúziel z OPČM. Nesprávne vykonané premeny môžu mať nebezpečné následky, preto je vhodné toto kúzlo ovládať.</p>
+</div>
+
+<br clear="all">
+
+<p style="text-align: justify"><font color="#eb4b86"><u><b><big>GLACIUS</big></b></u></font></p>
+<div class="spell-card-container" style="float: right; margin-left: 20px;">
+    <div class="spell-card">
+        <img src="https://i.ibb.co/ncynPBT/glacius.gif" width="220" height="290" style="display: block; border-radius: 10px;">
+    </div>
+</div>
+<p style="text-align: justify">Veľmi užitočné kúzlo, ktoré dokáže skrotiť <span class="magic-text">oheň,</span> keďže ho znížením jeho teploty <span class="magic-text">uhasí.</span> V priebehu pár sekúnd ním <span class="magic-text">môžeme zmraziť</span> vodu, rieku či jazero. Vedľajším prejavom tohto kúzla je vyfukovanie bielej pary z úst, v dôsledku ochladenia vzduchu.</p><br><br><br><br><br><br><br><br><br><br>
+
+<p style="text-align: right"><img src="https://i.ibb.co/tPtxVkk/pppp.png" width="13%"></p>
