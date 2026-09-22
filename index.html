@@ -1,25 +1,69 @@
 <style>
+    /* ZÁKLADNÉ NASTAVENIE STRÁNKY */
+    body {
+        background-color: #23120c;
+        color: #d8b37e;
+        font-size: 14px;
+        margin: 0;
+        padding: 20px;
+    }
+
+    p, div {
+        font-size: 14px;
+        color: #d8b37e;
+    }
+
     /* 1. Otáčanie kartičiek */
-    .spell-card-container { perspective: 1000px; display: inline-block; margin-bottom: 15px; }
-    .spell-card { transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d; border-radius: 10px; }
-    .spell-card-container:hover .spell-card { transform: rotateY(360deg); }
+    .spell-card-container { 
+        perspective: 1000px; 
+        display: inline-block; 
+        margin-bottom: 15px; 
+    }
+    .spell-card { 
+        transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); 
+        transform-style: preserve-3d; 
+        border-radius: 10px; 
+    }
+    .spell-card-container:hover .spell-card { 
+        transform: rotateY(360deg); 
+    }
 
     /* 2. MAGICKÁ ZMENA FARBY TEXTU */
-    .magic-text { color: #eb4b86; transition: color 0.4s ease; cursor: default; }
-    .magic-text:hover { color: #2a5d8f; }
+    .magic-text { 
+        color: #eb4b86; 
+        transition: color 0.4s ease; 
+        cursor: default; 
+    }
+    .magic-text:hover { 
+        color: #2a5d8f; 
+    }
 
     /* 3. ANIMÁCIA HVIEZD (PREPNUTIE Z OBRYSU NA PLNOU) */
-    .star-divider { margin-top: -10px; margin-bottom: 15px; text-align: center; font-size: 26px; }
+    .star-divider { 
+        margin-top: -10px; 
+        margin-bottom: 15px; 
+        text-align: center; 
+        font-size: 26px; 
+    }
     
-    .star-wrapper { position: relative; display: inline-block; margin: 0 4px; color: #eb4b86; }
+    .star-wrapper { 
+        position: relative; 
+        display: inline-block; 
+        margin: 0 4px; 
+        color: #eb4b86; 
+    }
     
     .star-full {
-        position: absolute; top: 0; left: 0;
+        position: absolute; 
+        top: 0; 
+        left: 0;
         opacity: 0;
         animation: fade-in 0.5s ease-out forwards;
     }
 
-    @keyframes fade-in { to { opacity: 1; } }
+    @keyframes fade-in { 
+        to { opacity: 1; } 
+    }
 
     /* Postupné oneskorenie pre každú hviezdu */
     .star-wrapper:nth-child(1) .star-full { animation-delay: 0.3s; }
@@ -31,7 +75,7 @@
     .star-wrapper:nth-child(7) .star-full { animation-delay: 2.1s; }
 </style>
 
-<center><img src=https://i.ibb.co/Pj4WgpD/premeny.png width=60%></center>
+<center><img src="https://i.ibb.co/Pj4WgpD/premeny.png" width="60%"></center>
 <div class="star-divider">
     <span class="star-wrapper">☆<span class="star-full">★</span></span>
     <span class="star-wrapper">☆<span class="star-full">★</span></span>
@@ -41,34 +85,39 @@
     <span class="star-wrapper">☆<span class="star-full">★</span></span>
     <span class="star-wrapper">☆<span class="star-full">★</span></span>
 </div>
- 
+&nbsp;
 <p style="text-align: justify">Přeměňování predstavuje odvetvie mágie zamerané na <span class="magic-text">zmenu vzhľadu či iných vlastností objektu.</span> Ide o disciplínu umožňujúcu premeniť takmer všetky objekty okolo nás, avšak aj v tomto prípade existujú obmedzenia (nič nedokážete premeniť na požívateľné jedlo, mŕtvych neprivediete späť k životu, obmedzenie týkajúce sa veľkosti). 
- 
+&nbsp;
 Obecne je Přeměňování považované za jednu z <span class="magic-text">najnáročnejších a najvedeckejších magických disciplín,</span> vyžadujúcu veľkú dávku <span class="magic-text">trpezlivosti, systematickosti a presnosti.</span> Veľkou výhodou je pre kúzelníka i rozvinutá schopnosť <span class="magic-text">imaginácie,</span> keď si dokáže premenený objekt detailne predstaviť a tým čo najviac usmerniť tok mágie k požadovanému výsledku. </p>
- 
-<center><img src=https://i.ibb.co/875m8RH/Tortue-en-th-i-re.gif width=43%></center>
+&nbsp;
+<center><img src="https://i.ibb.co/875m8RH/Tortue-en-th-i-re.gif" width="43%"></center>
 <p style="text-align: justify">Keďže sa jedná o veľmi náročnú disciplínu, ponechám na jednotlivých profesoroch Přeměňování, aby vás do nej detailnejšie zasvätili a my prejdeme k dvom kúzlam, ktoré sú súčasťou osnov ZKV. <br><br></p>
- 
- 
-<p style="text-align: justify"><font color="#eb4b86"><u><b><big>REPARIFARGE</font></u></b></big></p>
+&nbsp;
+&nbsp;
+<p style="text-align: justify"><font color="#eb4b86"><u><b><big>REPARIFARGE</big></b></u></font></p>
 <p style="text-align: justify">Jedno z najčastejšie využívaných kúziel v oblasti přeměňování slúžiace nielen na <span class="magic-text">nápravu nevydarenej premeny,</span> ale tiež na zvrátenie účinku niektorých vybraných kúziel z OPČM (Densaugeo, Furnunculus). Nesprávne vykonané premeny môžu mať nebezpečné a častokrát i bolestivé následky, preto je vhodné toto kúzlo ovládať a pokúsiť sa v prípade nutnosti o jeho zoslanie.</p> 
- 
+&nbsp;
 <div class="spell-card-container" style="float: left; margin-right: 20px;">
     <div class="spell-card">
         <IMG BORDER="0" SRC="https://i.ibb.co/zJdxsCn/reparifarge.png" ALT="protego" WIDTH="220" HEIGHT="290" ALIGN="left" style="display: block; border-radius: 10px;">
     </div>
 </div>
 V minulosti neexistovalo veľké množstvo čarodejníkov zdatných v oblasti premien, čo často viedlo k závažným chybám pri premenách objektov a živých tvorov. Až do <span class="magic-text">roku 1547</span> sa nikto Přeměňování nevenoval do takej hĺbky, aby dokázal vymyslieť kúzlo na zvrátenie nevydarených premien. Zlom nastal vďaka čarodejnici menom <span class="magic-text">Belinda</span> (jej priezvisko sa v záznamoch nezachovalo), narodenej medzi rokmi 1490 – 1500, ktorá už počas svojich študentských rokov prejavovala hlboký záujem o premeny objektov a bola rozhodnutá sa tejto oblasti venovať na profesionálnej úrovni. Rok 1520 však jej plány zmenil. Pri použití kúzla Vera Verto stratila koncentráciu, čo malo za následok len čiastočnú premenu zvieraťa a jeho následnú smrť – v tom čase neexistoval spôsob, ako neúspešnú premenu zvrátiť. Belindu tento zážitok natoľko poznamenal, že už nechcela mať s přeměňováním absolútne nič spoločné a kúzla začala využívať čoraz menej. O pár rokov neskôr sa podobný tragický prípad stal aj jej dobrej priateľke, čo Belindu prinútilo sa k problému znova vrátiť. Ešte toho roku, krátko pred svojou smrťou vymyslela kúzlo Reparifarge. Presná príčina jej úmrtia zostáva dodnes neobjasnená, avšak predpokladá sa, že bola priamo spätá vývojom tohto kúzla. 
- 
- 
- 
-<p style="text-align: justify"><font color="#eb4b86"><u><b><big>GLACIUS</font></u></b></big></p>
-<p style="text-align: justify">Veľmi užitočné kúzlo, ktoré dokáže skrotiť <span class="magic-text">oheň,</span> keďže ho znížením jeho teploty <span class="magic-text">uhasí.</span> Nevyužívame ho iba na hasenie horiacich objektov pri požiaroch a iných katastrofách, ale aj na ďalší zo živlov – vodu. V priebehu pár sekúnd ním <span class="magic-text">môžeme zmraziť</span> nielen <span class="magic-text">vodu</span> v pohári, ale i rieku či menšie alebo väčšie jazero, pričom vytvorená ľadová plocha dokáže udržať i dieťa. Pozor, veľkosť a sila zmrazenej plochy závisí od schopností zosieľateľa, takže u začínajúcich čarodejníkov môže byť výsledný ľah krehký a nestabilný.</p> 
+&nbsp;
+&nbsp;
+&nbsp;
 
-<div class="spell-card-container" style="float: right; margin-left: 20px;">
-    <div class="spell-card">
-        <IMG BORDER="0" SRC="https://i.ibb.co/ncynPBT/glacius.gif" ALT="protego" WIDTH="220" HEIGHT="290" ALIGN="right" style="display: block; border-radius: 10px;">
+<!-- ZAROVNANIE GLACIUSA AJ S TEXTOM NA ÚROVEŇ KARTIČKY -->
+<div style="clear: both; margin-top: 30px;">
+    <div class="spell-card-container" style="float: right; margin-left: 20px;">
+        <div class="spell-card">
+            <IMG BORDER="0" SRC="https://i.ibb.co/ncynPBT/glacius.gif" ALT="protego" WIDTH="220" HEIGHT="290" ALIGN="right" style="display: block; border-radius: 10px;">
+        </div>
     </div>
+    <p style="text-align: justify; margin-top: 0;"><font color="#eb4b86"><u><b><big>GLACIUS</big></b></u></font></p>
+    <p style="text-align: justify">Veľmi užitočné kúzlo, ktoré dokáže skrotiť <span class="magic-text">oheň,</span> keďže ho znížením jeho teploty <span class="magic-text">uhasí.</span> Nevyužívame ho iba na hasenie horiacich objektov pri požiaroch a iných katastrofách, ale aj na ďalší zo živlov – vodu. V priebehu pár sekúnd ním <span class="magic-text">môžeme zmraziť</span> nielen <span class="magic-text">vodu</span> v pohári, ale i rieku či menšie alebo väčšie jazero, pričom vytvorená ľadová plocha dokáže udržať i dieťa. Pozor, veľkosť a sila zmrazenej plochy závisí od schopností zosieľateľa, takže u začínajúcich čarodejníkov môže byť výsledný ľah krehký a nestabilný.</p> 
+    <p style="text-align: justify">Vedľajším prejavom tohto kúzla je vyfukovanie bielej pary z úst, v dôsledku ochladenia vzduchu v blízkosti zosielateľa, keďže sa do prútika prenáša vysoká energia mraziacej mágie. Kúzlo nesmiete v žiadnom prípade použiť na človeka. Existujú aj pokročilejšie stupne tohto kúzla, Glacius Duo slúžiace na zmrazenie plynných cieľov a Glacius Tria zmrazujúce horiace plamene.</p>
 </div>
-Vedľajším prejavom tohto kúzla je vyfukovanie bielej pary z úst, v dôsledku ochladenia vzduchu v blízkosti zosielateľa, keďže sa do prútika prenáša vysoká energia mraziacej mágie. Kúzlo nesmiete v žiadnom prípade použiť na človeka. Existujú aj pokročilejšie stupne tohto kúzla, Glacius Duo slúžiace na zmrazenie plynných cieľov a Glacius Tria zmrazujúce horiace plamene.
-<p style="text-align: right"><img src=https://i.ibb.co/1Yn4PJ2Q/IKpng.png width=40%></p>
+
+<!-- NOVÝ PODPIS -->
+<p style="text-align: right; clear: both;"><img src="https://i.ibb.co/tPtxVkk/pppp.png" width="13%"></p>
